@@ -14,15 +14,22 @@ body {
   background-color:black;
 }
 
+a:-webkit-any-link{
+  text-decoration:none !important;
+  }
+
 /* ----- NAV BAR ----- */
 
 .navbar {
   background-color: black;
-  
+}
+
+.navbar-toggler-icon{
+  background-color: gainsboro;
 }
 
 .navbar-nav {
-  margin-left: 60%;
+  /* margin-left: 60%; */
 }
 
 .Hangman {
@@ -34,7 +41,7 @@ body {
 
 footer{
   background-color: black;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;   
 }
@@ -45,4 +52,11 @@ footer{
 
 .hereLink:hover {
   color:gainsboro
+}
+
+@media (max-height:808px) {
+  footer{
+    position: relative;
+    bottom:0;
+  }
 }
